@@ -1,14 +1,24 @@
 <template>
-  <FormElement :id="id" label="id3 label" :hintText="validationMessage">
-    <Input v-bind="$attrs" :id="id" type="number" @input="e => changed(id, e)" @blur="() => blurred(id)" @focus="() => focused(id)"/>
+  <FormElement
+    :id="id"
+    label="id3 label"
+    :hint-text="validationMessage">
+    <Input
+      v-bind="$attrs"
+      :id="id"
+      type="number"
+      @input="e => changed(id, e)"
+      @blur="() => blurred(id)"
+      @focus="() => focused(id)"
+    />
   </FormElement>
 </template>
 
 <script>
 import { minMax } from '../common/validations'
 import { formMixin, initFormElementData } from '../common/form'
-import FormElement from './FormElement'
-import Input from './Input'
+import FormElement from './framework/FormElement'
+import Input from './framework/Input'
 
 export default {
   name: 'Number',

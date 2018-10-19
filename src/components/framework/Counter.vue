@@ -1,5 +1,6 @@
 <template>
-  <div :class="{counter: true, exceeded: exceeded}">{{current}} / {{max}}</div>
+  <div :class="{counter: true, exceeded: exceeded}">{{ current }} /
+    {{ max }}</div>
 </template>
 
 <script>

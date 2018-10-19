@@ -1,5 +1,5 @@
 <template>
-    <div v-if="hint">{{hint}}</div>
+  <div v-if="hint">{{ hint }}</div>
 </template>
 
 <script>
@@ -7,7 +7,8 @@ export default {
   name: 'Hint',
   props: {
     hint: {
-      type: String
+      type: String,
+      default: ''
     }
   }
 }

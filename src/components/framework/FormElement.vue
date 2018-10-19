@@ -1,11 +1,15 @@
 <template>
   <div>
-    <label :for="id" v-if="label">{{label}}</label>
+    <label
+      :for="id"
+      v-if="label">{{ label }}</label>
     <div>
       <slot/>
       <slot name="hint">
-        <div v-if="hintText" :class="`emphasis-${hintEmphasis}`">
-          {{hintText}}
+        <div
+          v-if="hintText"
+          :class="`emphasis-${hintEmphasis}`">
+          {{ hintText }}
         </div>
       </slot>
     </div>
@@ -13,7 +17,7 @@
 </template>
 
 <script>
-import { EMPHASIS } from '../common'
+import { EMPHASIS } from '../../common/index'
 
 export default {
   name: 'FormElement',
@@ -23,10 +27,12 @@ export default {
       required: true
     },
     label: {
-      type: String
+      type: String,
+      default: ''
     },
     hintText: {
-      type: String
+      type: String,
+      default: ''
     },
     hintEmphasis: {
       type: String,

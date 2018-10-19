@@ -7,8 +7,8 @@
 
 <script>
 import { formMixin, initFormElementData } from '../common/form'
-import FormElement from './FormElement'
-import Input from './Input'
+import FormElement from './framework/FormElement'
+import Input from './framework/Input'
 
 export default {
   name: 'Text',

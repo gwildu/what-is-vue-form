@@ -1,7 +1,11 @@
 <template>
-    <div class="inputContainer">
-      <input v-bind="$attrs" @input="onInput" @focus="focused = true" @blur="focused = false"/>
-    </div>
+  <div class="inputContainer">
+    <input
+      v-bind="$attrs"
+      @input="onInput"
+      @focus="focused = true"
+      @blur="focused = false">
+  </div>
 </template>
 
 <script>
